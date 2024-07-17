@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+	padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --bt-color: #E1E1E6;
+  --rain: #498da1;
+  --florest: #598769;
+  --coffeeshop: #826450;
+  --fireplace: #d68851;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+#app {
+  display: flex;
+  gap: clamp(10rem, 19.2rem, 20rem);
+  align-items: center;
+
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0px;
+  border: 0;
+  appearance: none;
+
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+#counter {
+  display: flex;
+  flex-direction: column;
+}
+
+#timer {
+  font-size: 12.6rem;
+  font-weight: 500;
+}
+
+
+#controls {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+#controls button {
+  width: 4.8rem;
+  height: 4.8rem;
+  
+  border: none;
+  background: transparent;
+  
+  cursor: pointer;
+  
+}
+
+#modes {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 3.2rem;
+
+}
+
+
+#modes button {
+  background:var(--bt-color);
+
+  width: clamp(13rem, 13.8rem, 14rem);
+  height: clamp(14.5rem, 15.2rem, 16rem);
+
+  border: none;
+  border-radius: 2.4rem;
+
+  cursor: pointer;
+}
+
+#florest:hover, #rain:hover, 
+#coffeeshop:hover, #fireplace:hover, .play-circle:hover,
+.stop-circle:hover, .plus-circle:hover, .minus-circle:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease-in-out;
+}
+
+#tree-white, #rain-white, #coffeeshop-white,
+#fire-white, .florest #tree-black, .rain #rain-black, 
+.coffeeshop #coffeeshop-black, .fireplace #fire-black{
+  display: none;
+}
+
+.florest #florest {
+  background: var(--florest);
+  transition: background .5s;
+}
+
+.rain #rain {
+  background: var(--rain);
+  transition: background .5s;
+}
+
+ .coffeeshop #coffeeshop {
+  background: var(--coffeeshop);
+  transition: background .5s;
+}
+
+
+ .fireplace #fireplace{
+  background: var(--fireplace);
+  transition: background .5s;
+}
+
+
+.florest #tree-white, .rain #rain-white, 
+.coffeeshop #coffeeshop-white, .fireplace #fire-white {
+  display: inline;
+}
+
+
+@media (max-width: 1040px) {
+ #app {
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 5rem;
+ } 
+
+ #timer {
+  font-size: 10rem;
+  font-weight: 500;
+}
+
+
+
+}

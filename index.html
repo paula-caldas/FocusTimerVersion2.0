@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTimer - Versão 2.0</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+  <script type="module" src="./src/main.js" defer></script>
+
+</head>
+<body>
+
+  <div id="app">
+
+    <div id="counter">
+      <section id="timer">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+  
+      <section id="controls">
+        <button class="play-circle">
+          <img src="./assets/play.svg">
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+  
+        <button class="stop-circle">
+          <img src="./assets/stop.svg">
+          <span class="sr-only">Reiniciar contador</span>
+        </button>
+  
+        <button class="plus-circle">
+          <img src="./assets/plus.svg">
+          <span class="sr-only">Aumentar 5 minutos</span>
+        </button>
+  
+        <button class="minus-circle">
+          <img src="./assets/minus.svg">
+          <span class="sr-only">Diminuir 5 minutos</span>
+        </button>
+  
+  
+      </section>
+    </div>
+
+    <section id="modes">
+      <button id="florest">
+        <span class="sr-only">Ativar modo floresta</span>
+        <img id="tree-black" src="./assets/tree-black.svg">
+        <img id="tree-white" src="./assets/tree-white.svg">
+      </button>
+
+      <button id="rain">
+        <span class="sr-only">Ativar modo chuva</span>
+        <img id="rain-black" src="./assets/rain-black.svg">
+        <img id="rain-white" src="./assets/rain-white.svg">
+      </button>
+
+      <button id="coffeeshop">
+        <span class="sr-only">Ativar modo cafeteria</span>
+        <img id="coffeeshop-black" src="./assets/coffeeshop-black.svg">
+        <img id="coffeeshop-white" src="./assets/coffeeshop-white.svg">
+      </button>
+
+      <button id="fireplace">
+        <span class="sr-only">Ativar modo lareira</span>
+        <img id="fire-black" src="./assets/fire-black.svg">
+        <img id="fire-white" src="./assets/fire-white.svg">
+      </button>
+
+    </section>
+
+
+
+  </div>
+ 
+
+</body>
+</html>
